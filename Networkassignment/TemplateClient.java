@@ -22,7 +22,6 @@ public class TemplateClient {
 				socket.getInputStream()));
 		PrintWriter pw = new PrintWriter(new OutputStreamWriter(
 				socket.getOutputStream()));
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String y = bf.readLine();
 
 		if (y != null) {
