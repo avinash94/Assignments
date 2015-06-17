@@ -22,16 +22,11 @@ public class TemplateClient {
 				socket.getInputStream()));
 		PrintWriter pw = new PrintWriter(new OutputStreamWriter(
 				socket.getOutputStream()));
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String y = bf.readLine();
 
 		if (y != null) {
 			String s;
 			System.out.println("Server says:" + y);
-			/*
-			 * System.out.println("acknowledge"); s = br.readLine();
-			 * pw.println(s);
-			 */
 			BufferedInputStream bis = new BufferedInputStream(
 					socket.getInputStream());
 			byte[] b = new byte[1024];
@@ -42,8 +37,6 @@ public class TemplateClient {
 				System.out.println(a);
 				bos.write(b, 0, a);
 			}
-
-			// bos.write(b, 0, b.length);
 			bos.flush();
 			bos.close();
 			socket.close();
