@@ -1,7 +1,7 @@
 package API;
 
 public class StoreMetrics {
-	int[] values = new int[4];
+private	int[] values = new int[4];
 	StoreDataPoint arr[];
 
 	public StoreMetrics(StoreDataPoint arr[]) {
