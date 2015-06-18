@@ -1,14 +1,14 @@
 package API;
 
 public class StoreMetrics {
-private	int[] values = new int[4];
+	private int[] values = new int[4];
 	StoreDataPoint arr[];
 
 	public StoreMetrics(StoreDataPoint arr[]) {
 		this.arr = arr;
 	}
 
-	String highsales(String category, String month) {
+	public String highsales(String category, String month) {
 		int highest = 100;
 		String cat = "";
 		for (int i = 1; i < 193; i++) {
@@ -25,7 +25,7 @@ private	int[] values = new int[4];
 
 	}
 
-	String highmonthwise(String month) {
+	public String highmonthwise(String month) {
 		int highest = 100;
 		String ca = "";
 		for (int j = 0; j < 4; j++) {
@@ -68,7 +68,7 @@ private	int[] values = new int[4];
 		return (ca);
 	}
 
-	int averagesales(String category) {
+	public int averagesales(String category) {
 		int sum = 0;
 		for (int i = 1; i < 193; i++) {
 			if (arr[i].getcategory().equals(category)) {

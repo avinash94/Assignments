@@ -14,19 +14,19 @@ public class StoreDataPoint {
 		this.sales = sales;
 	}
 
-	String getbrand() {
+	public String getbrand() {
 		return brand;
 	}
 
-	String getsales() {
+	public String getsales() {
 		return sales;
 	}
 
-	String getmonth() {
+	public String getmonth() {
 		return month;
 	}
 
-	String getcategory() {
+	public String getcategory() {
 		return category;
 	}
 }
